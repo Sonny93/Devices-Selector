@@ -35,9 +35,51 @@ a {
     height: 100%;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    opacity: 0;
+    flex-direction: row;
     animation: .2s fadein both;
+}
+
+.app .stream {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.app .stream video {
+    height: auto;
+    width: 100%;
+}
+
+.app .stream video.show {
+    display: flex !important;
+}
+
+.app .stream video.hide {
+    display: none !important;
+}
+
+select, button {
+    cursor: pointer;
+    height: auto;
+    width: 100%;
+    color: #111;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #dadce0;
+    border-radius: 3px;
+    transition: .15s;
+}
+
+select:not(:disabled):hover, button:not(:disabled):hover {
+    box-shadow: 0 0 5px 1px #dadce0;
+}
+
+select:disabled, button:disabled {
+    cursor: not-allowed;
 }
 
 @keyframes fadein {

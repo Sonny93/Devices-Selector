@@ -1,7 +1,7 @@
 {
-  "name": "base-react-project",
+  "name": "devices-selector",
   "version": "1.0.0",
-  "description": "Base react project with express server",
+  "description": "Devices Selector is a React component facilitating the selection of audio (Microphone and Speakers) and video devices for web communications via WebRTC",
   "main": "server.js",
   "scripts": {
     "watch": "webpack --config webpack.dev.js",
@@ -22,8 +22,9 @@
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.6.0",
-    "sass-loader": "^8.0.2",
+    "file-loader": "^6.0.0",
     "react-transition-group": "^4.4.1",
+    "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",

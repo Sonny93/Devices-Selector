@@ -1,33 +1,3 @@
-# Base React Project
+# Devices Selector
 
-Base react project with express server.\
-Webpack, React, and Express are included.
-
-## Installation
-
-```bash
-git clone https://github.com/Sonny93/base-react-project.git
-npm install
-npm install -g pm2
-```
-
-## Dev
-
-Watching files with webpack
-```bash
-npm run watch
-```
-
-Start server
-```bash
-pm2 start server.js --watch && clear && pm2 logs
-```
-
-## Production
-
-```bash
-npm run build
-```
-
-## License
-[ISC](https://choosealicense.com/licenses/isc/)
+Devices Selector is a React component facilitating the selection of audio (Microphone and Speakers) and video devices for web communications via WebRTC
