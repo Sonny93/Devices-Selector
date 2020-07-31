@@ -74,6 +74,8 @@ class App extends React.Component {
         }
     }
 
+    fullscreenVideo = () => this.state.videoTagRef.current.requestFullscreen();
+
     render() {
         const { error, constraints, stream, loadingStream, videoTagRef } = this.state;
         return ( 
@@ -84,7 +86,7 @@ class App extends React.Component {
                 <div className='stream'>
                     {loadingStream ? <img src={`dist/${loadingSVG}`} alt="loading svg"/> : null}
                     {error ? error.toString() : ''}
-                    <video className={stream ? 'show' : 'hide'} ref={videoTagRef} autoPlay={true}></video>
+                    <video className={stream ? 'show' : 'hide'} onDoubleClick={this.fullscreenVideo} ref={videoTagRef} autoPlay={true}></video>
                 </div>
             </div>
         )
